@@ -3,9 +3,9 @@ const cancelBtn=document.getElementById('cancel-btn');
 const sideNav=document.getElementById('sidenav');
 const modal=document.getElementById('modal');
 
-const indbtn=document.getElementById('oilbtn');
-const outbtn=document.getElementById('gheebtn');
-const athkbtn=document.getElementById('chekbtn');
+const indbtn=document.getElementById('indbtn');
+const outbtn=document.getElementById('outbtn');
+const athkbtn=document.getElementById('athbtn');
 
 navBtn.addEventListener("click",function(){
 	sideNav.classList.add('show');
@@ -24,18 +24,18 @@ windows.addEventListener('click',function(event){
 	}
 });
 
-oilbtn.addEventListener("click",function(){
-	oil.classList.add('ind');
+indbtn.addEventListener("click",function(){
+	ind.classList.add('ind');
 	modal.classList.add('indModal');
 });
 
-gheebtn.addEventListener("click",function(){
-	ghee.classList.add('out');
+out.btn.addEventListener("click",function(){
+	out.classList.add('out');
 	modal.classList.add('outModal');
 });
 
-chekbtn.addEventListener("click",function(){
-	chekku.classList.add('ath');
+athbtn.addEventListener("click",function(){
+	ath.classList.add('ath');
 	modal.classList.add('athModal');
 });
 
